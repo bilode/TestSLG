@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-struct APIClient: RemoteStoragePort {
+class APIClient {
     
     enum ClientError: Error {
         case unknown
@@ -17,6 +17,7 @@ struct APIClient: RemoteStoragePort {
         case underlying(Error)
     }
     
+    // Session configuration for testing purpose along with the iOS network link conditioner
     var session: URLSession = {
         
         let config = URLSessionConfiguration.default
@@ -24,10 +25,6 @@ struct APIClient: RemoteStoragePort {
         let session = URLSession(configuration: config)
         return session
     }()
-    
-    func save() {
-        
-    }
     
     func fetch<T: Decodable>(
         _ request: URLRequest,
@@ -53,14 +50,9 @@ struct APIClient: RemoteStoragePort {
     }
     
     
-    static func downloadImage(url: String) -> AnyPublisher<Data, Error> {
+    func downloadImage(url: URL) -> AnyPublisher<Data, Error> {
         
-        guard let url = URL(string: url) else {
-            return Fail(error: ClientError.invalidURL)
-                .eraseToAnyPublisher()
-        }
-        
-        return URLSession.shared.dataTaskPublisher(for: url)
+        return self.session.dataTaskPublisher(for: url)
             .tryMap { response -> Data in
                 
                 let httpURLResponse = response.response as? HTTPURLResponse

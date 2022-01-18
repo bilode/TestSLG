@@ -25,29 +25,49 @@ class AppCoordinator {
 extension AppCoordinator: OffersListViewControllerDelegate {
 
     private func presentOffersViewController() {
-        let vc = OffersListViewController(with: OffersListViewModel(with: OffersService(remoteStorage: APIClient())),
-                                          delegate: self)
+        
+        let client = APIClient()
+        
+        let offersRemoteDataSourceAdapter = OffersRemoteDataSourceAdapter(client: client)
+        let offersRepository = OffersRepositoryAdapter(remoteDataSource: offersRemoteDataSourceAdapter, localDataSource: OffersLocalDataSourceAdapter())
+        let offersGetter = GetOffers(offersRepository: offersRepository)
+        
+        let imagesRemoteDataSourceAdapter = ImagesRemoteDataSourceAdapter(client: client)
+        let imagesRepositoryAdapter = ImagesRepositoryAdapter(withRemoteDataSource: imagesRemoteDataSourceAdapter)
+        let imageGetter = GetImage(imageRepository: imagesRepositoryAdapter)
+        
+        let viewModel = OffersListViewModel(with: offersGetter, imageGetter: imageGetter)
+        
+        let vc = OffersListViewController(with: viewModel, delegate: self)
+        vc.delegate = self
         
         self.navigationController.pushViewController(vc, animated: false)
     }
     
-    func didSelectOffer(_: Offer) {
+    func didSelectOffer(_ offer: Offer) {
         
+        self.presentOfferDetails(offer)
     }
 }
 
-//extension AppCoordinator: OfferDetailsViewControllerDelegate {
-//
-//    private func presentOfferDetails(withModel model: OfferDetailsViewModel) {
-//
-//        let vc = OfferDetailsViewController(with: model)
-//        vc.delegate = self
-//
-//        self.navigationController.pushViewController(vc, animated: true)
-//    }
-//
-//
-//    func didTapCloseButton() {
-//        self.navigationController.popViewController(animated: true)
-//    }
-//}
+extension AppCoordinator {
+
+    private func presentOfferDetails(_ offer: Offer) {
+
+        let client = APIClient()
+        
+        let offersRemoteDataSourceAdapter = OffersRemoteDataSourceAdapter(client: client)
+        let offersRepository = OffersRepositoryAdapter(remoteDataSource: offersRemoteDataSourceAdapter, localDataSource: OffersLocalDataSourceAdapter())
+        let offerDetailsGetter = GetOfferDetails(offersRepository: offersRepository)
+        
+        let imagesRemoteDataSourceAdapter = ImagesRemoteDataSourceAdapter(client: client)
+        let imagesRepositoryAdapter = ImagesRepositoryAdapter(withRemoteDataSource: imagesRemoteDataSourceAdapter)
+        let imageGetter = GetImage(imageRepository: imagesRepositoryAdapter)
+        
+        let viewModel = OfferDetailsViewModel(with: offer.id, offerDetailsGetter: offerDetailsGetter, imageGetter: imageGetter)
+        
+        let vc = OfferDetailsViewController(with: viewModel)
+
+        self.navigationController.pushViewController(vc, animated: true)
+    }
+}

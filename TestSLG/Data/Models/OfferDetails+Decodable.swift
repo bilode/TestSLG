@@ -1,29 +1,13 @@
 //
-//  APIOffer.swift
+//  OfferDetails+Decodable.swift
 //  TestSLG
 //
-//  Created by Timothée Bilodeau on 06/01/2022.
+//  Created by Timothée Bilodeau on 11/01/2022.
 //
 
 import Foundation
 
-struct APIOffersListing: Decodable {
-    let items: [APIOffer]
-    let totalCount: Int
-}
-
-struct APIOffer: Decodable {
-    
-    let bedrooms: Int?
-    let rooms: Int?
-    let url: String?
-    
-    let city: String
-    let id: Int
-    let area: Double
-    let price: Double
-    let professional: String
-    let propertyType: String
+extension OfferDetails : Decodable {
     
     private enum CodingKeys: String, CodingKey {
         case bedrooms

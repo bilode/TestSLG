@@ -7,28 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654705F72796C26B00064152 /* testOffersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654705F62796C26B00064152 /* testOffersListViewModel.swift */; };
+		654705F92796C6DB00064152 /* ImagesRepositoryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654705F82796C6DB00064152 /* ImagesRepositoryAdapter.swift */; };
+		654705FB2796C6F800064152 /* ImagesRepositoryPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654705FA2796C6F800064152 /* ImagesRepositoryPort.swift */; };
+		654705FE2796DA8200064152 /* testGetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654705FD2796DA8200064152 /* testGetImage.swift */; };
+		6547060227970DF300064152 /* testLocalDataSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547060127970DF300064152 /* testLocalDataSourceAdapter.swift */; };
 		6567DFB22785DD3F009EEDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFB12785DD3F009EEDB0 /* AppDelegate.swift */; };
 		6567DFB42785DD3F009EEDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFB32785DD3F009EEDB0 /* SceneDelegate.swift */; };
 		6567DFBB2785DD44009EEDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6567DFBA2785DD44009EEDB0 /* Assets.xcassets */; };
 		6567DFBE2785DD44009EEDB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567DFBC2785DD44009EEDB0 /* LaunchScreen.storyboard */; };
-		6567DFC92785DD44009EEDB0 /* TestSLGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFC82785DD44009EEDB0 /* TestSLGTests.swift */; };
 		6567DFD32785DD44009EEDB0 /* TestSLGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFD22785DD44009EEDB0 /* TestSLGUITests.swift */; };
 		6567DFD52785DD44009EEDB0 /* TestSLGUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFD42785DD44009EEDB0 /* TestSLGUITestsLaunchTests.swift */; };
-		6567DFE22786FB2F009EEDB0 /* RemoteStoragePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFE12786FB2F009EEDB0 /* RemoteStoragePort.swift */; };
-		6567DFE42786FB3C009EEDB0 /* LocalStoragePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFE32786FB3C009EEDB0 /* LocalStoragePort.swift */; };
 		6567DFE62786FF08009EEDB0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFE52786FF08009EEDB0 /* APIClient.swift */; };
-		6567DFE92787001B009EEDB0 /* OffersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFE82787001B009EEDB0 /* OffersService.swift */; };
 		6567DFEE278703F8009EEDB0 /* OffersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFED278703F8009EEDB0 /* OffersListViewController.swift */; };
 		6567DFF027870407009EEDB0 /* OfferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFEF27870407009EEDB0 /* OfferDetailsViewController.swift */; };
 		6567DFF227870447009EEDB0 /* OffersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFF127870447009EEDB0 /* OffersListViewModel.swift */; };
 		6567DFF427870453009EEDB0 /* OfferDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFF327870453009EEDB0 /* OfferDetailsViewModel.swift */; };
-		6567DFF6278704B8009EEDB0 /* OfferCellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFF5278704B8009EEDB0 /* OfferCellInput.swift */; };
-		6567DFF8278704C8009EEDB0 /* OfferDetailsInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFF7278704C8009EEDB0 /* OfferDetailsInput.swift */; };
 		6567DFFA27870AE3009EEDB0 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFF927870AE3009EEDB0 /* Offer.swift */; };
 		6567DFFC27870AEB009EEDB0 /* OfferDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFFB27870AEB009EEDB0 /* OfferDetails.swift */; };
-		6567DFFE27870C6E009EEDB0 /* APIOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFFD27870C6E009EEDB0 /* APIOffer.swift */; };
 		6567E00027872E46009EEDB0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567DFFF27872E46009EEDB0 /* AppCoordinator.swift */; };
 		6567E00227875871009EEDB0 /* OfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E00127875871009EEDB0 /* OfferCell.swift */; };
+		6567E00A278DD10E009EEDB0 /* GetOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E009278DD10E009EEDB0 /* GetOffers.swift */; };
+		6567E00C278DD11E009EEDB0 /* GetOfferDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E00B278DD11E009EEDB0 /* GetOfferDetails.swift */; };
+		6567E00E278DD1C1009EEDB0 /* OffersRepositoryPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E00D278DD1C1009EEDB0 /* OffersRepositoryPort.swift */; };
+		6567E013278DD3BB009EEDB0 /* Offer+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E012278DD3BB009EEDB0 /* Offer+Decodable.swift */; };
+		6567E015278DD3C9009EEDB0 /* OfferDetails+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E014278DD3C9009EEDB0 /* OfferDetails+Decodable.swift */; };
+		6567E017278DD455009EEDB0 /* OffersRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E016278DD455009EEDB0 /* OffersRemoteDataSource.swift */; };
+		6567E019278DD460009EEDB0 /* OffersLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E018278DD460009EEDB0 /* OffersLocalDataSource.swift */; };
+		6567E01B278DD60A009EEDB0 /* OffersRepositoryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E01A278DD60A009EEDB0 /* OffersRepositoryAdapter.swift */; };
+		6567E01D278DEFE0009EEDB0 /* APIOffersListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E01C278DEFE0009EEDB0 /* APIOffersListing.swift */; };
+		6567E01F278F0406009EEDB0 /* GetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E01E278F0406009EEDB0 /* GetImage.swift */; };
+		6567E02127907DBF009EEDB0 /* ImagesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E02027907DBF009EEDB0 /* ImagesRemoteDataSource.swift */; };
+		6567E0252790A960009EEDB0 /* OfferCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567E0242790A960009EEDB0 /* OfferCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		654705F62796C26B00064152 /* testOffersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testOffersListViewModel.swift; sourceTree = "<group>"; };
+		654705F82796C6DB00064152 /* ImagesRepositoryAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepositoryAdapter.swift; sourceTree = "<group>"; };
+		654705FA2796C6F800064152 /* ImagesRepositoryPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepositoryPort.swift; sourceTree = "<group>"; };
+		654705FD2796DA8200064152 /* testGetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testGetImage.swift; sourceTree = "<group>"; };
+		6547060127970DF300064152 /* testLocalDataSourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testLocalDataSourceAdapter.swift; sourceTree = "<group>"; };
 		6567DFAE2785DD3F009EEDB0 /* TestSLG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSLG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6567DFB12785DD3F009EEDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6567DFB32785DD3F009EEDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,25 +71,30 @@
 		6567DFBD2785DD44009EEDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6567DFBF2785DD44009EEDB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6567DFC42785DD44009EEDB0 /* TestSLGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSLGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6567DFC82785DD44009EEDB0 /* TestSLGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSLGTests.swift; sourceTree = "<group>"; };
 		6567DFCE2785DD44009EEDB0 /* TestSLGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSLGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6567DFD22785DD44009EEDB0 /* TestSLGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSLGUITests.swift; sourceTree = "<group>"; };
 		6567DFD42785DD44009EEDB0 /* TestSLGUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSLGUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6567DFE12786FB2F009EEDB0 /* RemoteStoragePort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStoragePort.swift; sourceTree = "<group>"; };
-		6567DFE32786FB3C009EEDB0 /* LocalStoragePort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStoragePort.swift; sourceTree = "<group>"; };
 		6567DFE52786FF08009EEDB0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		6567DFE82787001B009EEDB0 /* OffersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersService.swift; sourceTree = "<group>"; };
 		6567DFED278703F8009EEDB0 /* OffersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersListViewController.swift; sourceTree = "<group>"; };
 		6567DFEF27870407009EEDB0 /* OfferDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsViewController.swift; sourceTree = "<group>"; };
 		6567DFF127870447009EEDB0 /* OffersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersListViewModel.swift; sourceTree = "<group>"; };
 		6567DFF327870453009EEDB0 /* OfferDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsViewModel.swift; sourceTree = "<group>"; };
-		6567DFF5278704B8009EEDB0 /* OfferCellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCellInput.swift; sourceTree = "<group>"; };
-		6567DFF7278704C8009EEDB0 /* OfferDetailsInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsInput.swift; sourceTree = "<group>"; };
 		6567DFF927870AE3009EEDB0 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		6567DFFB27870AEB009EEDB0 /* OfferDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetails.swift; sourceTree = "<group>"; };
-		6567DFFD27870C6E009EEDB0 /* APIOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOffer.swift; sourceTree = "<group>"; };
 		6567DFFF27872E46009EEDB0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		6567E00127875871009EEDB0 /* OfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCell.swift; sourceTree = "<group>"; };
+		6567E009278DD10E009EEDB0 /* GetOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOffers.swift; sourceTree = "<group>"; };
+		6567E00B278DD11E009EEDB0 /* GetOfferDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOfferDetails.swift; sourceTree = "<group>"; };
+		6567E00D278DD1C1009EEDB0 /* OffersRepositoryPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersRepositoryPort.swift; sourceTree = "<group>"; };
+		6567E012278DD3BB009EEDB0 /* Offer+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Offer+Decodable.swift"; sourceTree = "<group>"; };
+		6567E014278DD3C9009EEDB0 /* OfferDetails+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OfferDetails+Decodable.swift"; sourceTree = "<group>"; };
+		6567E016278DD455009EEDB0 /* OffersRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersRemoteDataSource.swift; sourceTree = "<group>"; };
+		6567E018278DD460009EEDB0 /* OffersLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersLocalDataSource.swift; sourceTree = "<group>"; };
+		6567E01A278DD60A009EEDB0 /* OffersRepositoryAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersRepositoryAdapter.swift; sourceTree = "<group>"; };
+		6567E01C278DEFE0009EEDB0 /* APIOffersListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOffersListing.swift; sourceTree = "<group>"; };
+		6567E01E278F0406009EEDB0 /* GetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImage.swift; sourceTree = "<group>"; };
+		6567E02027907DBF009EEDB0 /* ImagesRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRemoteDataSource.swift; sourceTree = "<group>"; };
+		6567E0242790A960009EEDB0 /* OfferCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,15 +148,12 @@
 				6567DFFF27872E46009EEDB0 /* AppCoordinator.swift */,
 				6567DFEA278703D4009EEDB0 /* UI */,
 				6567DFE72787000C009EEDB0 /* Domain */,
+				6567E005278DCBCD009EEDB0 /* Data */,
 				6567DFB12785DD3F009EEDB0 /* AppDelegate.swift */,
 				6567DFB32785DD3F009EEDB0 /* SceneDelegate.swift */,
 				6567DFBA2785DD44009EEDB0 /* Assets.xcassets */,
 				6567DFBC2785DD44009EEDB0 /* LaunchScreen.storyboard */,
 				6567DFBF2785DD44009EEDB0 /* Info.plist */,
-				6567DFE12786FB2F009EEDB0 /* RemoteStoragePort.swift */,
-				6567DFE32786FB3C009EEDB0 /* LocalStoragePort.swift */,
-				6567DFE52786FF08009EEDB0 /* APIClient.swift */,
-				6567DFFD27870C6E009EEDB0 /* APIOffer.swift */,
 			);
 			path = TestSLG;
 			sourceTree = "<group>";
@@ -144,7 +161,9 @@
 		6567DFC72785DD44009EEDB0 /* TestSLGTests */ = {
 			isa = PBXGroup;
 			children = (
-				6567DFC82785DD44009EEDB0 /* TestSLGTests.swift */,
+				6547060127970DF300064152 /* testLocalDataSourceAdapter.swift */,
+				654705FD2796DA8200064152 /* testGetImage.swift */,
+				654705F62796C26B00064152 /* testOffersListViewModel.swift */,
 			);
 			path = TestSLGTests;
 			sourceTree = "<group>";
@@ -161,9 +180,9 @@
 		6567DFE72787000C009EEDB0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				6567DFE82787001B009EEDB0 /* OffersService.swift */,
-				6567DFF927870AE3009EEDB0 /* Offer.swift */,
-				6567DFFB27870AEB009EEDB0 /* OfferDetails.swift */,
+				6567E008278DD0F0009EEDB0 /* Entities */,
+				6567E007278DD0D0009EEDB0 /* Repositories */,
+				6567E006278DD0B5009EEDB0 /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -172,14 +191,81 @@
 			isa = PBXGroup;
 			children = (
 				6567DFED278703F8009EEDB0 /* OffersListViewController.swift */,
-				6567DFEF27870407009EEDB0 /* OfferDetailsViewController.swift */,
 				6567DFF127870447009EEDB0 /* OffersListViewModel.swift */,
+				6567DFEF27870407009EEDB0 /* OfferDetailsViewController.swift */,
 				6567DFF327870453009EEDB0 /* OfferDetailsViewModel.swift */,
-				6567DFF5278704B8009EEDB0 /* OfferCellInput.swift */,
-				6567DFF7278704C8009EEDB0 /* OfferDetailsInput.swift */,
 				6567E00127875871009EEDB0 /* OfferCell.swift */,
+				6567E0242790A960009EEDB0 /* OfferCellViewModel.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		6567E005278DCBCD009EEDB0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6567E00F278DD334009EEDB0 /* Datasources */,
+				6567E011278DD368009EEDB0 /* Models */,
+				6567E010278DD33D009EEDB0 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6567E006278DD0B5009EEDB0 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6567E009278DD10E009EEDB0 /* GetOffers.swift */,
+				6567E00B278DD11E009EEDB0 /* GetOfferDetails.swift */,
+				6567E01E278F0406009EEDB0 /* GetImage.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		6567E007278DD0D0009EEDB0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6567E00D278DD1C1009EEDB0 /* OffersRepositoryPort.swift */,
+				654705FA2796C6F800064152 /* ImagesRepositoryPort.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6567E008278DD0F0009EEDB0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6567DFF927870AE3009EEDB0 /* Offer.swift */,
+				6567DFFB27870AEB009EEDB0 /* OfferDetails.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6567E00F278DD334009EEDB0 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				6567E016278DD455009EEDB0 /* OffersRemoteDataSource.swift */,
+				6567E018278DD460009EEDB0 /* OffersLocalDataSource.swift */,
+				6567E02027907DBF009EEDB0 /* ImagesRemoteDataSource.swift */,
+				6567DFE52786FF08009EEDB0 /* APIClient.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		6567E010278DD33D009EEDB0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6567E01A278DD60A009EEDB0 /* OffersRepositoryAdapter.swift */,
+				654705F82796C6DB00064152 /* ImagesRepositoryAdapter.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6567E011278DD368009EEDB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6567E01C278DEFE0009EEDB0 /* APIOffersListing.swift */,
+				6567E012278DD3BB009EEDB0 /* Offer+Decodable.swift */,
+				6567E014278DD3C9009EEDB0 /* OfferDetails+Decodable.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,22 +398,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6567E00C278DD11E009EEDB0 /* GetOfferDetails.swift in Sources */,
 				6567DFFA27870AE3009EEDB0 /* Offer.swift in Sources */,
-				6567DFF6278704B8009EEDB0 /* OfferCellInput.swift in Sources */,
+				6567E01B278DD60A009EEDB0 /* OffersRepositoryAdapter.swift in Sources */,
+				6567E00E278DD1C1009EEDB0 /* OffersRepositoryPort.swift in Sources */,
 				6567DFF027870407009EEDB0 /* OfferDetailsViewController.swift in Sources */,
-				6567DFE22786FB2F009EEDB0 /* RemoteStoragePort.swift in Sources */,
+				6567E02127907DBF009EEDB0 /* ImagesRemoteDataSource.swift in Sources */,
+				6567E00A278DD10E009EEDB0 /* GetOffers.swift in Sources */,
+				654705FB2796C6F800064152 /* ImagesRepositoryPort.swift in Sources */,
 				6567E00027872E46009EEDB0 /* AppCoordinator.swift in Sources */,
-				6567DFF8278704C8009EEDB0 /* OfferDetailsInput.swift in Sources */,
 				6567DFEE278703F8009EEDB0 /* OffersListViewController.swift in Sources */,
 				6567DFF227870447009EEDB0 /* OffersListViewModel.swift in Sources */,
+				654705F92796C6DB00064152 /* ImagesRepositoryAdapter.swift in Sources */,
+				6567E019278DD460009EEDB0 /* OffersLocalDataSource.swift in Sources */,
+				6567E015278DD3C9009EEDB0 /* OfferDetails+Decodable.swift in Sources */,
+				6567E0252790A960009EEDB0 /* OfferCellViewModel.swift in Sources */,
 				6567DFF427870453009EEDB0 /* OfferDetailsViewModel.swift in Sources */,
+				6567E01D278DEFE0009EEDB0 /* APIOffersListing.swift in Sources */,
 				6567DFE62786FF08009EEDB0 /* APIClient.swift in Sources */,
-				6567DFFE27870C6E009EEDB0 /* APIOffer.swift in Sources */,
 				6567E00227875871009EEDB0 /* OfferCell.swift in Sources */,
-				6567DFE92787001B009EEDB0 /* OffersService.swift in Sources */,
+				6567E013278DD3BB009EEDB0 /* Offer+Decodable.swift in Sources */,
 				6567DFFC27870AEB009EEDB0 /* OfferDetails.swift in Sources */,
-				6567DFE42786FB3C009EEDB0 /* LocalStoragePort.swift in Sources */,
+				6567E01F278F0406009EEDB0 /* GetImage.swift in Sources */,
 				6567DFB22785DD3F009EEDB0 /* AppDelegate.swift in Sources */,
+				6567E017278DD455009EEDB0 /* OffersRemoteDataSource.swift in Sources */,
 				6567DFB42785DD3F009EEDB0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +430,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6567DFC92785DD44009EEDB0 /* TestSLGTests.swift in Sources */,
+				6547060227970DF300064152 /* testLocalDataSourceAdapter.swift in Sources */,
+				654705FE2796DA8200064152 /* testGetImage.swift in Sources */,
+				654705F72796C26B00064152 /* testOffersListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
